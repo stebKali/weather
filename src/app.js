@@ -36,9 +36,9 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.',
+        helpText: 'Ngati mukuvutika ka gwiritsidwe ntchito ka website iyi: call +265***',
         title: 'Help',
-        name: 'Andrew Mead'
+        name: 'Steb Kalimoja',
     })
 })
 
@@ -84,7 +84,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Steb Kalimoja',
         errorMessage: 'Help article not found.'
     })
 })
